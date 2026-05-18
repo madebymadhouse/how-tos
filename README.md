@@ -1,38 +1,10 @@
-<div align="center">
+![Mad House How-Tos](assets/banner.svg)
 
-<br/>
-
-<img src="https://img.shields.io/badge/MAD%20HOUSE-HOW%20TO-cc2200?style=for-the-badge&labelColor=0d0d0d" height="38"/>
-
-<br/><br/>
-
-**End-to-end guides for building AI-native products, tools, and infrastructure from the ground up.**
-
-*Written for people who want to understand what they're building — not just copy and paste it.*
-
-<br/>
-
-<a href="#-vibe-coding"><img src="https://img.shields.io/badge/VIBE%20CODING-cc2200?style=flat-square&labelColor=1a1a1a" /></a>
-&nbsp;
-<a href="#-vps--server"><img src="https://img.shields.io/badge/VPS%20%26%20SERVER-cc2200?style=flat-square&labelColor=1a1a1a" /></a>
-&nbsp;
-<a href="#-bots"><img src="https://img.shields.io/badge/BOTS-cc2200?style=flat-square&labelColor=1a1a1a" /></a>
-&nbsp;
-<a href="#-incubation"><img src="https://img.shields.io/badge/INCUBATION-cc2200?style=flat-square&labelColor=1a1a1a" /></a>
-&nbsp;
-<a href="#-org-setup"><img src="https://img.shields.io/badge/ORG%20SETUP-cc2200?style=flat-square&labelColor=1a1a1a" /></a>
-
-<br/><br/>
-
-</div>
+<a href="#-vibe-coding"><img src="assets/buttons/btn-vibe-coding.svg" /></a>&nbsp;<a href="#-vps--server"><img src="assets/buttons/btn-vps--server.svg" /></a>&nbsp;<a href="#-bots"><img src="assets/buttons/btn-bots.svg" /></a>&nbsp;<a href="#-incubation"><img src="assets/buttons/btn-incubation.svg" /></a>&nbsp;<a href="#-org-setup"><img src="assets/buttons/btn-org-setup.svg" /></a>
 
 ---
 
-## What this is
-
-This is the internal knowledge base for how Mad House builds things — made public.
-
-Every guide is written to take you from zero to working, with enough depth that you understand what's happening at each step. No magic steps, no "just run this command", no missing context. If you follow a guide end-to-end, you will have built the thing.
+End-to-end guides for building AI-native products, tools, and infrastructure from the ground up. Written for people who want to understand what they're building — not just copy and paste it.
 
 The goal is to eventually package these into premium tutorials with assets, video walkthroughs, and deeper reference material. The notebooks here are the source of truth.
 
@@ -45,35 +17,24 @@ You will need:
 - A GitHub account and `gh` CLI installed and authenticated (`gh auth login`)
 - A Linux machine or WSL2 on Windows
 - `git`, `bash`, `python3`, `node` / `npm` installed
-- [Claude Code](https://claude.ai/code) installed for the vibe-coding guides (`npm install -g @anthropic-ai/claude-code`)
+- [Claude Code](https://claude.ai/code) for the vibe-coding guides (`npm install -g @anthropic-ai/claude-code`)
 - A VPS (any provider) for the VPS and deployment guides — DigitalOcean, Hetzner, or equivalent
 
 Every guide states its prerequisites at the top. Start with what you have.
 
----
-
 ## Getting the notebooks
 
 ```bash
-git clone https://github.com/madebymadhouse/how-to.git
-cd how-to
-```
-
-Open in VS Code (best experience) or any Jupyter-compatible viewer:
-
-```bash
+git clone https://github.com/madebymadhouse/how-tos.git
+cd how-tos
 code .
-# or
-jupyter lab
 ```
 
-Notebooks are written to be read linearly. Code cells are executable — run them or just follow along.
+Open in VS Code (best experience) or any Jupyter-compatible viewer. Notebooks are written to be read linearly — code cells are runnable but reading is enough to follow along.
 
 ---
 
-<br/>
-
-## ![Vibe Coding](https://img.shields.io/badge/VIBE%20CODING-cc2200?style=flat-square&labelColor=0d0d0d) Vibe Coding
+## ![](assets/buttons/btn-vibe-coding.svg) Vibe Coding
 
 Building with AI as your pair programmer. This section covers the infrastructure layer: how to give Claude persistent instructions, custom tools it can call, and how to write prompts that produce consistent results.
 
@@ -89,11 +50,9 @@ Skills are custom slash commands that give Claude a deterministic tool backed by
 - The agentskills.io specification and why it separates deterministic work from AI judgment
 - How to structure scripts so Claude never has to guess at output
 - When to use a script vs letting Claude interpret directly
-- How to publish a skill so teammates can install it
+- How to publish a skill so teammates can install it in one command
 
-**Prerequisites:** bash basics, Claude Code installed  
-**Difficulty:** Beginner  
-**Folder:** `vibe-coding/skills/`
+**Prerequisites:** bash basics, Claude Code installed &nbsp;·&nbsp; **Difficulty:** Beginner &nbsp;·&nbsp; `vibe-coding/skills/`
 
 ---
 
@@ -109,15 +68,13 @@ Agents are Claude instances with persistent instructions, memory, and custom too
 - How to scope an agent so it only touches what it should
 - How to add tools to an agent and write defensive instructions
 
-**Prerequisites:** Claude Code, familiarity with skills  
-**Difficulty:** Intermediate  
-**Folder:** `vibe-coding/agents/`
+**Prerequisites:** Claude Code, familiarity with skills &nbsp;·&nbsp; **Difficulty:** Intermediate &nbsp;·&nbsp; `vibe-coding/agents/`
 
 ---
 
 ### [How to Prompt](vibe-coding/prompts/how-to-prompt.ipynb)
 
-Prompting is a skill. This is the guide for writing prompts that produce consistent, high-quality output — not just for one-offs but for repeatable workflows.
+Prompting is a skill. This is the guide for writing prompts that produce consistent, high-quality output across repeatable workflows — not just one-offs.
 
 **You will learn:**
 - How to structure prompts for complex multi-step tasks
@@ -125,17 +82,13 @@ Prompting is a skill. This is the guide for writing prompts that produce consist
 - How to write prompts that Claude will follow precisely without drifting
 - Real-world prompt templates for code, planning, review, and generation tasks
 
-**Prerequisites:** None  
-**Difficulty:** Beginner  
-**Folder:** `vibe-coding/prompts/`
+**Prerequisites:** None &nbsp;·&nbsp; **Difficulty:** Beginner &nbsp;·&nbsp; `vibe-coding/prompts/`
 
 ---
 
-<br/>
+## ![](assets/buttons/btn-vps--server.svg) VPS & Server
 
-## ![VPS & Server](https://img.shields.io/badge/VPS%20%26%20SERVER-cc2200?style=flat-square&labelColor=0d0d0d) VPS & Server
-
-Running your own server. This section covers the full lifecycle: provisioning a VPS from scratch, keeping it healthy, and deploying applications to it using Coolify.
+Running your own server. This section covers the full lifecycle: provisioning a VPS from scratch, keeping it healthy, and deploying applications using Coolify.
 
 <br/>
 
@@ -146,14 +99,12 @@ Provision a production-ready Linux VPS from a blank slate. Every step is explain
 **You will build:** a secured, Docker-ready VPS with Traefik for routing, fail2ban for protection, and Tailscale for private access.
 
 **You will understand:**
-- How to harden a fresh VPS against common attacks (SSH, firewall, fail2ban)
+- How to harden a fresh VPS against common attacks (SSH keys, firewall, fail2ban)
 - How Docker networking works and why Traefik sits in front of everything
 - How Tailscale gives you private access without exposing ports
 - How to structure your server so adding new services is one command, not a project
 
-**Prerequisites:** A VPS with SSH access, basic Linux familiarity  
-**Difficulty:** Beginner to Intermediate  
-**Folder:** `vps/setup/`
+**Prerequisites:** A VPS with SSH access, basic Linux familiarity &nbsp;·&nbsp; **Difficulty:** Beginner–Intermediate &nbsp;·&nbsp; `vps/setup/`
 
 ---
 
@@ -167,9 +118,7 @@ A server that runs itself is a server you can ignore — until something breaks.
 - How to update containers safely without downtime
 - How to recover from the most common failure modes: full disk, OOM, crashed container
 
-**Prerequisites:** Completed VPS Setup or equivalent  
-**Difficulty:** Intermediate  
-**Folder:** `vps/maintenance/`
+**Prerequisites:** Completed VPS Setup or equivalent &nbsp;·&nbsp; **Difficulty:** Intermediate &nbsp;·&nbsp; `vps/maintenance/`
 
 ---
 
@@ -177,7 +126,7 @@ A server that runs itself is a server you can ignore — until something breaks.
 
 Coolify is a self-hosted deployment platform — Heroku-style deploys from your own server. This guide covers installing it, deploying your first app, and building the workflow for consistent production deployments.
 
-**You will build:** a working Coolify instance with at least one application deployed end-to-end, including environment variables, a domain, and TLS.
+**You will build:** a working Coolify instance with at least one application deployed end-to-end, including environment variables, a custom domain, and TLS.
 
 **You will understand:**
 - How Coolify wraps Docker Compose and what that means for your deployment
@@ -185,57 +134,47 @@ Coolify is a self-hosted deployment platform — Heroku-style deploys from your 
 - How to manage environment variables securely without committing secrets
 - How to trigger deploys from Git push and monitor them in real time
 
-**Prerequisites:** Completed VPS Setup, a domain name, a GitHub repo with a Dockerfile  
-**Difficulty:** Intermediate  
-**Folder:** `vps/coolify/`
+**Prerequisites:** Completed VPS Setup, a domain name, a GitHub repo with a Dockerfile &nbsp;·&nbsp; **Difficulty:** Intermediate &nbsp;·&nbsp; `vps/coolify/`
 
 ---
 
-<br/>
+## ![](assets/buttons/btn-bots.svg) Bots
 
-## ![Bots](https://img.shields.io/badge/BOTS-cc2200?style=flat-square&labelColor=0d0d0d) Bots
-
-Discord bots as a deployment pattern — not the primary product, but a useful channel for notifications, alerts, and lightweight interfaces to your tools.
+Discord bots as a deployment pattern — a useful channel for notifications, alerts, and lightweight interfaces to your tools. Not the primary product, but a clean way to expose functionality to a team.
 
 <br/>
 
 ### [Discord Bot](bots/discord/discord-bot.ipynb)
 
-Build and deploy a Discord bot that actually does something useful — not a music bot or meme command, but a bot connected to your infrastructure for notifications or lightweight control.
+Build and deploy a Discord bot that does something useful — connected to your infrastructure for notifications or lightweight control, not a music bot.
 
-**You will build:** a production Discord bot, containerized and deployed via Coolify, with at least one meaningful command or event handler.
+**You will build:** a production Discord bot, containerized and deployed via Coolify, with at least one meaningful command or event handler wired to real infrastructure.
 
 **You will understand:**
-- How the Discord API and bot token system works
-- How to handle events and slash commands properly
+- How the Discord API and bot token system works end-to-end
+- How to handle events and slash commands correctly
 - How to Dockerize and deploy a bot so it runs 24/7 without babysitting
 - When a bot is the right interface and when it's the wrong one
 
-**Prerequisites:** Python basics, completed Coolify Deployments  
-**Difficulty:** Intermediate  
-**Folder:** `bots/discord/`
+**Prerequisites:** Python basics, completed Coolify Deployments &nbsp;·&nbsp; **Difficulty:** Intermediate &nbsp;·&nbsp; `bots/discord/`
 
 ---
 
 ### [Bot Standards](bots/standards/bot-standards.ipynb)
 
-The design principles and operational standards for any bot you build — covering logging, error handling, rate limits, and the patterns that separate a reliable bot from one that breaks at 2am.
+The design principles and operational standards for any bot you build — logging, error handling, rate limits, and the patterns that separate a reliable bot from one that breaks at 2am.
 
 **You will learn:**
-- Logging patterns that make bot failures debuggable
+- Logging patterns that make bot failures debuggable in production
 - How to handle Discord rate limits and API errors gracefully
 - The lifecycle of a bot command from user input to response
 - What belongs in a bot vs what belongs in a proper API
 
-**Prerequisites:** Discord Bot guide or existing bot codebase  
-**Difficulty:** Intermediate  
-**Folder:** `bots/standards/`
+**Prerequisites:** Discord Bot guide or an existing bot codebase &nbsp;·&nbsp; **Difficulty:** Intermediate &nbsp;·&nbsp; `bots/standards/`
 
 ---
 
-<br/>
-
-## ![Incubation](https://img.shields.io/badge/INCUBATION-cc2200?style=flat-square&labelColor=0d0d0d) Incubation
+## ![](assets/buttons/btn-incubation.svg) Incubation
 
 How Mad House takes ideas from spark to shipped — the process, the milestones, and the decisions that move something forward without letting it stall.
 
@@ -251,17 +190,13 @@ A structured approach to running an idea through stages: concept, prototype, bui
 - How to make the call to archive something vs keep iterating
 - How to use the `incubate` skill to track your lab without a separate tool
 
-**Prerequisites:** None  
-**Difficulty:** Beginner  
-**Folder:** `incubation/lifecycle/`
+**Prerequisites:** None &nbsp;·&nbsp; **Difficulty:** Beginner &nbsp;·&nbsp; `incubation/lifecycle/`
 
 ---
 
-<br/>
+## ![](assets/buttons/btn-org-setup.svg) Org Setup
 
-## ![Org Setup](https://img.shields.io/badge/ORG%20SETUP-cc2200?style=flat-square&labelColor=0d0d0d) Org Setup
-
-How to structure a GitHub org and wire up routing for a real operation — not a side project, but something you'd hand to a team.
+How to structure a GitHub org and wire up routing for a real operation — not a side project, but something you'd hand to a team or build a product on top of.
 
 <br/>
 
@@ -277,9 +212,7 @@ How to structure a GitHub org from scratch: naming conventions, repo standards, 
 - How to use the `repo-bootstrap` skill to scaffold new repos in seconds
 - How to audit your org for stale repos, missing files, and clutter
 
-**Prerequisites:** GitHub account, `gh` CLI  
-**Difficulty:** Beginner  
-**Folder:** `org-setup/github/`
+**Prerequisites:** GitHub account, `gh` CLI &nbsp;·&nbsp; **Difficulty:** Beginner &nbsp;·&nbsp; `org-setup/github/`
 
 ---
 
@@ -290,21 +223,13 @@ Traefik as a reverse proxy — how to route multiple domains and subdomains to d
 **You will build:** a working Traefik setup that routes at least two domains to two different Docker services, with TLS on both.
 
 **You will understand:**
-- How Traefik discovers services via Docker labels (no config file per service)
+- How Traefik discovers services via Docker labels — no config file per service
 - How Let's Encrypt TLS works with Traefik's ACME challenge
 - How to debug routing issues: entrypoints, routers, and middlewares
 - How to add a new service to an existing Traefik setup in under 5 minutes
 
-**Prerequisites:** Completed VPS Setup, basic Docker Compose familiarity  
-**Difficulty:** Intermediate  
-**Folder:** `org-setup/routing/`
+**Prerequisites:** Completed VPS Setup, basic Docker Compose familiarity &nbsp;·&nbsp; **Difficulty:** Intermediate &nbsp;·&nbsp; `org-setup/routing/`
 
 ---
 
-<br/>
-
-<div align="center">
-
-<img src="https://img.shields.io/badge/BUILT%20AT-MAD%20HOUSE-cc2200?style=flat-square&labelColor=0d0d0d" />
-
-</div>
+<sub>Built at Mad House &nbsp;·&nbsp; [madebymadhouse](https://github.com/madebymadhouse)</sub>

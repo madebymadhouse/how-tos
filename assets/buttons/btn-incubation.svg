@@ -1,0 +1,12 @@
+<svg width="93" height="30" viewBox="0 0 93 30" xmlns="http://www.w3.org/2000/svg">
+  <rect width="93" height="30" rx="4" fill="#cc2200"/>
+  <text
+    x="46"
+    y="19"
+    text-anchor="middle"
+    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-size="11"
+    font-weight="600"
+    letter-spacing="0.8"
+    fill="#ffffff">INCUBATION</text>
+</svg>
