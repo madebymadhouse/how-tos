@@ -4,7 +4,7 @@
 
 ---
 
-End-to-end guides for building AI-native products, tools, and infrastructure from the ground up. Written for people who want to understand what they're building — not just copy and paste it.
+End-to-end guides for building AI-native products, tools, and infrastructure from the ground up. Written for people who want to understand what they're building - not just copy and paste it.
 
 The goal is to eventually package these into premium tutorials with assets, video walkthroughs, and deeper reference material. The notebooks here are the source of truth.
 
@@ -18,7 +18,7 @@ You will need:
 - A Linux machine or WSL2 on Windows
 - `git`, `bash`, `python3`, `node` / `npm` installed
 - [Claude Code](https://claude.ai/code) for the vibe-coding guides (`npm install -g @anthropic-ai/claude-code`)
-- A VPS (any provider) for the VPS and deployment guides — DigitalOcean, Hetzner, or equivalent
+- A VPS (any provider) for the VPS and deployment guides - DigitalOcean, Hetzner, or equivalent
 
 Every guide states its prerequisites at the top. Start with what you have.
 
@@ -30,7 +30,7 @@ cd how-tos
 code .
 ```
 
-Open in VS Code (best experience) or any Jupyter-compatible viewer. Notebooks are written to be read linearly — code cells are runnable but reading is enough to follow along.
+Open in VS Code (best experience) or any Jupyter-compatible viewer. Notebooks are written to be read linearly - code cells are runnable but reading is enough to follow along.
 
 ---
 
@@ -44,7 +44,7 @@ Building with AI as your pair programmer. This section covers the infrastructure
 
 Skills are custom slash commands that give Claude a deterministic tool backed by a shell script. Instead of re-explaining how to do something every session, you write it once and Claude runs it precisely.
 
-**You will build:** a working skill from scratch — SKILL.md, a bash script with JSON output, and the wiring that makes Claude call it correctly.
+**You will build:** a working skill from scratch - SKILL.md, a bash script with JSON output, and the wiring that makes Claude call it correctly.
 
 **You will understand:**
 - The agentskills.io specification and why it separates deterministic work from AI judgment
@@ -58,7 +58,7 @@ Skills are custom slash commands that give Claude a deterministic tool backed by
 
 ### [How to Build Agents](vibe-coding/agents/how-to-build-agents.ipynb)
 
-Agents are Claude instances with persistent instructions, memory, and custom tool access. This guide covers building and deploying real agents — not toy demos.
+Agents are Claude instances with persistent instructions, memory, and custom tool access. This guide covers building and deploying real agents - not toy demos.
 
 **You will build:** a scoped agent with its own AGENTS.md, a defined set of tools, and clear behavioral guardrails.
 
@@ -74,7 +74,7 @@ Agents are Claude instances with persistent instructions, memory, and custom too
 
 ### [How to Prompt](vibe-coding/prompts/how-to-prompt.ipynb)
 
-Prompting is a skill. This is the guide for writing prompts that produce consistent, high-quality output across repeatable workflows — not just one-offs.
+Prompting is a skill. This is the guide for writing prompts that produce consistent, high-quality output across repeatable workflows - not just one-offs.
 
 **You will learn:**
 - How to structure prompts for complex multi-step tasks
@@ -94,7 +94,7 @@ Running your own server. This section covers the full lifecycle: provisioning a 
 
 ### [VPS Setup](vps/setup/vps-setup.ipynb)
 
-Provision a production-ready Linux VPS from a blank slate. Every step is explained — not just the commands but why each one matters.
+Provision a production-ready Linux VPS from a blank slate. Every step is explained - not just the commands but why each one matters.
 
 **You will build:** a secured, Docker-ready VPS with Traefik for routing, fail2ban for protection, and Tailscale for private access.
 
@@ -110,7 +110,7 @@ Provision a production-ready Linux VPS from a blank slate. Every step is explain
 
 ### [VPS Maintenance](vps/maintenance/vps-maintenance.ipynb)
 
-A server that runs itself is a server you can ignore — until something breaks. This guide covers the routines, monitoring patterns, and recovery steps that keep a production VPS healthy.
+A server that runs itself is a server you can ignore - until something breaks. This guide covers the routines, monitoring patterns, and recovery steps that keep a production VPS healthy.
 
 **You will learn:**
 - What to check weekly vs monthly vs only when something is wrong
@@ -124,7 +124,7 @@ A server that runs itself is a server you can ignore — until something breaks.
 
 ### [Coolify Deployments](vps/coolify/coolify-deployment.ipynb)
 
-Coolify is a self-hosted deployment platform — Heroku-style deploys from your own server. This guide covers installing it, deploying your first app, and building the workflow for consistent production deployments.
+Coolify is a self-hosted deployment platform - Heroku-style deploys from your own server. This guide covers installing it, deploying your first app, and building the workflow for consistent production deployments.
 
 **You will build:** a working Coolify instance with at least one application deployed end-to-end, including environment variables, a custom domain, and TLS.
 
@@ -140,13 +140,13 @@ Coolify is a self-hosted deployment platform — Heroku-style deploys from your 
 
 ## ![](assets/buttons/btn-bots.svg) Bots
 
-Discord bots as a deployment pattern — a useful channel for notifications, alerts, and lightweight interfaces to your tools. Not the primary product, but a clean way to expose functionality to a team.
+Discord bots as a deployment pattern - a useful channel for notifications, alerts, and lightweight interfaces to your tools. Not the primary product, but a clean way to expose functionality to a team.
 
 <br/>
 
 ### [Discord Bot](bots/discord/discord-bot.ipynb)
 
-Build and deploy a Discord bot that does something useful — connected to your infrastructure for notifications or lightweight control, not a music bot.
+Build and deploy a Discord bot that does something useful - connected to your infrastructure for notifications or lightweight control, not a music bot.
 
 **You will build:** a production Discord bot, containerized and deployed via Coolify, with at least one meaningful command or event handler wired to real infrastructure.
 
@@ -162,7 +162,7 @@ Build and deploy a Discord bot that does something useful — connected to your 
 
 ### [Bot Standards](bots/standards/bot-standards.ipynb)
 
-The design principles and operational standards for any bot you build — logging, error handling, rate limits, and the patterns that separate a reliable bot from one that breaks at 2am.
+The design principles and operational standards for any bot you build - logging, error handling, rate limits, and the patterns that separate a reliable bot from one that breaks at 2am.
 
 **You will learn:**
 - Logging patterns that make bot failures debuggable in production
@@ -176,13 +176,13 @@ The design principles and operational standards for any bot you build — loggin
 
 ## ![](assets/buttons/btn-incubation.svg) Incubation
 
-How Mad House takes ideas from spark to shipped — the process, the milestones, and the decisions that move something forward without letting it stall.
+How Mad House takes ideas from spark to shipped - the process, the milestones, and the decisions that move something forward without letting it stall.
 
 <br/>
 
 ### [Project Lifecycle](incubation/lifecycle/project-lifecycle.ipynb)
 
-A structured approach to running an idea through stages: concept, prototype, building, shipped, maintained, archived. Not a rigid process — a map.
+A structured approach to running an idea through stages: concept, prototype, building, shipped, maintained, archived. Not a rigid process - a map.
 
 **You will learn:**
 - How to define a project clearly enough that you know when it's done
@@ -196,7 +196,7 @@ A structured approach to running an idea through stages: concept, prototype, bui
 
 ## ![](assets/buttons/btn-org-setup.svg) Org Setup
 
-How to structure a GitHub org and wire up routing for a real operation — not a side project, but something you'd hand to a team or build a product on top of.
+How to structure a GitHub org and wire up routing for a real operation - not a side project, but something you'd hand to a team or build a product on top of.
 
 <br/>
 
@@ -218,12 +218,12 @@ How to structure a GitHub org from scratch: naming conventions, repo standards, 
 
 ### [Traefik Routing](org-setup/routing/traefik-routing.ipynb)
 
-Traefik as a reverse proxy — how to route multiple domains and subdomains to different services on one server, with automatic TLS and zero downtime reloads.
+Traefik as a reverse proxy - how to route multiple domains and subdomains to different services on one server, with automatic TLS and zero downtime reloads.
 
 **You will build:** a working Traefik setup that routes at least two domains to two different Docker services, with TLS on both.
 
 **You will understand:**
-- How Traefik discovers services via Docker labels — no config file per service
+- How Traefik discovers services via Docker labels - no config file per service
 - How Let's Encrypt TLS works with Traefik's ACME challenge
 - How to debug routing issues: entrypoints, routers, and middlewares
 - How to add a new service to an existing Traefik setup in under 5 minutes
