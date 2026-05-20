@@ -1,6 +1,6 @@
-![Mad House How-Tos](assets/banner.svg)
+![How-Tos banner](assets/banner.svg)
 
-<a href="#-vibe-coding"><img src="assets/buttons/btn-vibe-coding.svg" /></a>&nbsp;<a href="#-vps--server"><img src="assets/buttons/btn-vps--server.svg" /></a>&nbsp;<a href="#-bots"><img src="assets/buttons/btn-bots.svg" /></a>&nbsp;<a href="#-incubation"><img src="assets/buttons/btn-incubation.svg" /></a>&nbsp;<a href="#-org-setup"><img src="assets/buttons/btn-org-setup.svg" /></a>
+<a href="#vibe-coding"><img src="assets/buttons/btn-vibe-coding.svg" alt="Vibe Coding" /></a>&nbsp;<a href="#vps-server"><img src="assets/buttons/btn-vps--server.svg" alt="VPS & Server" /></a>&nbsp;<a href="#bots"><img src="assets/buttons/btn-bots.svg" alt="Bots" /></a>&nbsp;<a href="#incubation"><img src="assets/buttons/btn-incubation.svg" alt="Incubation" /></a>&nbsp;<a href="#org-setup"><img src="assets/buttons/btn-org-setup.svg" alt="Org Setup" /></a>
 
 ---
 

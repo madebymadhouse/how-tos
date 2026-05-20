@@ -1,12 +1,13 @@
-<svg width="87" height="30" viewBox="0 0 87 30" xmlns="http://www.w3.org/2000/svg">
-  <rect width="87" height="30" rx="4" fill="#cc2200"/>
+<svg width="78" height="28" viewBox="0 0 78 28" xmlns="http://www.w3.org/2000/svg">
+  <rect width="78" height="28" rx="6" fill="#cc2200"/>
   <text
-    x="43"
-    y="19"
+    x="39"
+    y="18"
     text-anchor="middle"
-    font-family="Inter, 'Helvetica Neue', Arial, sans-serif"
+    font-family="Inter, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
     font-size="11"
     font-weight="600"
-    letter-spacing="0.8"
-    fill="#ffffff">ORG SETUP</text>
+    letter-spacing="0.4"
+    fill="#ffffff"
+    text-rendering="geometricPrecision">Org Setup</text>
 </svg>
